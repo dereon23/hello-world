@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+  users = [
+    { nombre: 'Juan', apellidos: 'Pérez Ramírez', edad: 18 },
+    { nombre: 'María', apellidos: 'León González', edad: 16 },
+    { nombre: 'Luis', apellidos: 'Sánchez Rodríguez', edad: 23 },
+    { nombre: 'Ana', apellidos: 'Fernandez Martínez', edad: 21 },
+  ];
 }
