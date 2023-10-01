@@ -1,13 +1,17 @@
 <ion-card ion-card-clickable [routerLink]="'/welcome'">
   <ion-card-header>
+    <ion-button style="margin-left: 110px;" class="fav-button" fill="clear" aria-label="Favorite">
+       <ion-icon *ngIf="fav" slot="icon-only"  color="danger" name="heart" aria-hidden="true"></ion-icon>
+       <ion-icon *ngIf="!fav" slot="icon-only"  color="medium" name="heart-outline" aria-hidden="true"></ion-icon>
+    </ion-button>
     <ion-avatar class="pic-avatar"></ion-avatar>
     <ion-card-title>
-      {{ nombre }} {{ apellidos | slice:0:1 | uppercase }}
+      {{ name }} {{ surname | slice:0:1 | uppercase }}
     </ion-card-title>
   </ion-card-header>  
 
   <ion-card-content>
-    <p> {{ nombre }} {{ apellidos }} </p>
-    <p>Edad: {{ edad }}</p>
+    <p> {{ name }} {{ surname }} </p>
+    <p>Edad: {{ age }}</p>
   </ion-card-content>
 </ion-card>

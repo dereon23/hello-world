@@ -15,8 +15,8 @@
 
   <div id="container">
     <div class="flex-container">
-      <ng-container *ngFor="let user of users">
-          <app-user-info [nombre]="user.nombre" [apellidos]="user.apellidos" [edad]="user.edad" ></app-user-info>
+      <ng-container *ngFor="let user of _users">
+          <app-user-info [name]="user.name" [surname]="user.surname" [age]="user.age" ></app-user-info>
       </ng-container>
     </div>
   </div>
